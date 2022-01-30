@@ -3,7 +3,7 @@ Covid 19 Data Exploration
 
 The data taken from https://ourworldindata.org/covid-deaths.
 
-After the data set was received, data cleaning was performed to import it into the database. 
+After I received the dataset, data cleaning was performed to import it into the database. 
 
 The analysis starts since the day the Covid cases started to be registered on https://ourworldindata.org/covid-deaths.
 
