@@ -64,5 +64,5 @@ WHERE continent IS NOT NULL
 GROUP BY 1
 ORDER BY Highest_Death_Count DESC NULLS LAST;
 
--- United States has the highest total death witn 883939 and Turkey is in 19th position with total 87045 deaths.
+-- United States has the highest total death with 883939 and Turkey is in 19th position with total 87045 deaths.
 
