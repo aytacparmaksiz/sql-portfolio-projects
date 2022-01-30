@@ -16,7 +16,7 @@ The data was converted to appropriate data types, cleaned and imported into Post
 -- Shows the probability of dying if you get covid in Turkey
 
 	SELECT locations, dates, total_cases, total_deaths, 
-		     ROUND(((total_deaths/total_cases) * 100),2) AS Death_Percentage
+		ROUND(((total_deaths/total_cases) * 100),2) AS Death_Percentage
 	FROM coviddeaths
 	WHERE locations = 'Turkey'
 	Order By 2
@@ -32,7 +32,7 @@ WHERE locations = 'Turkey';
 -- Query about total cases against the population of Turkey. It shows what percentage of population got Covid19 per day.
 
 	SELECT locations, dates, population, total_cases,
-		     ROUND(((total_cases/population) * 100),2) AS Percentage_of_Population
+		ROUND(((total_cases/population) * 100),2) AS Percentage_of_Population
 	FROM coviddeaths
 	WHERE locations = 'Turkey'
 	Order By 2
@@ -48,7 +48,7 @@ WHERE locations = 'Turkey';
 -- Looking at countries with highest infection rate and Turkey's position in this analysis.
 
 SELECT locations, population, MAX(total_cases) AS Highest_Infection_Count, 
-		   MAX((total_cases/population) * 100) AS Percentage_Infected_Population
+	MAX((total_cases/population) * 100) AS Percentage_Infected_Population
 FROM coviddeaths
 GROUP BY 1,2
 ORDER BY Percentage_Infected_Population DESC NULLS LAST;
