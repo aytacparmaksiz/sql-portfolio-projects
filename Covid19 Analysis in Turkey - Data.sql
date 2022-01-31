@@ -10,9 +10,9 @@
 
 -- The average of the death percentage in Turkey.
 
-SELECT ROUND(AVG((total_deaths/total_cases) * 100),2) AS Avg_Death_Percentage   
-FROM coviddeaths
-WHERE locations = 'Turkey';
+	SELECT ROUND(AVG((total_deaths/total_cases) * 100),2) AS Avg_Death_Percentage   
+	FROM coviddeaths
+	WHERE locations = 'Turkey';
 
 -- The result is 1.53%.
 
