@@ -1,4 +1,14 @@
 
+/*
+In this project, Turkey's situation in the Covid19 pandemic has been analyzed from various aspects.
+
+For the data used in this project, https://ourworldindata.org/covid-deaths site was used.
+
+The data set cleaned and organized in to appropriate data types in order to be analyzed in SQL. Then, related tables created in SQL and the data imported in CSV format to PostgreSQL.
+
+Skills used: Joins, CTE's, Windows Functions, Aggregate Functions, Converting Data Types, Subclause.
+*/
+
 -- Total cases against total deaths in Turkey
 -- Shows the probability of dying if you get covid in Turkey
 
